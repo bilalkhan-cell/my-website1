@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilal's Personal Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        header nav {
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+        }
+        header nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding-top: 5em;
+        }
+        section {
+            margin: 2em 0;
+            padding: 2em;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            animation: fadeIn 1s;
+        }
+        h1, h2 {
+            color: #4CAF50;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em;
+        }
+        .project {
+            flex: 1 1 calc(33.333% - 1em);
+            background: #e4e4e4;
+            padding: 1em;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .project:hover {
+            transform: scale(1.05);
+        }
+        .project h3 {
+            margin-top: 0;
+        }
+        .social-links a {
+            margin: 0 0.5em;
+            text-decoration: none;
+            color: #4CAF50;
+        }
+        .profile-pic {
+            display: block;
+            margin: 0 auto 1em;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .skills {
+            list-style-type: none;
+            padding: 0;
+        }
+        .skills li {
+            background: #e4e4e4;
+            margin: 0.5em 0;
+            padding: 0.5em;
+            border-radius: 5px;
+        }
+        .experience {
+            list-style-type: none;
+            padding: 0;
+        }
+        .experience li {
+            margin: 0.5em 0;
+        }
+        .experience h3 {
+            margin: 0;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="ABCD.png" alt="Bilal's Profile Picture" class="profile-pic">
+            <p>Hi, I'm Bilal. I'm a designer by profession and a Canva designer who creates stunning wedding cards, business cards, and thumbnail logos. I am passionate about design and take pride in my ability to transform ideas into visually appealing creations.</p>
+            <p>With a background in canva designer and graphics designer, I have a unique perspective on combining functionality with aesthetics. My goal is to deliver high-quality, personalized designs that meet the specific needs of my clients.</p>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project">
+                    <h3>Wedding Card Design</h3>
+                    <p>A beautiful and elegant wedding card design that captures the essence of the couple's special day.</p>
+                </div>
+                <div class="project">
+                    <h3>Business Card Design</h3>
+                    <p>A professional and modern business card design that leaves a lasting impression.</p>
+                </div>
+                <div class="project">
+                    <h3>Thumbnail Logo Design</h3>
+                    <p>An eye-catching thumbnail logo design for social media platforms, enhancing brand visibility.</p>
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul class="skills">
+                <li>Graphic Design using Canva</li>
+                <li>Canva designer  </li>
+                <li>Customer Service and Client Relations</li>
+                <li>Project Management</li>
+                <li>Creative Problem Solving</li>
+            </ul>
+        </section>
+        <section id="experience">
+            <h2>Experience</h2>
+            <ul class="experience">
+                <li>
+                    <h3>Designer</h3>
+                    <p>Kalyan, 2023 - Present</p>
+                    <p>Specialized in high-quality desinging services, providing exceptional craftsmanship and attention to detail.</p>
+                </li>
+                <li>
+                    <h3>Freelance Canva Designer</h3>
+                    <p>2023 - Present</p>
+                    <p>Designed a wide range of digital and print materials, including wedding cards, business cards, and logos for various clients.</p>
+                </li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>You can reach me at: <strong>+91 9819981239</strong></p>
+            <div class="social-links">
+                <h3>Follow me:</h3>
+                <a href="https://www.facebook.com/profile.php?id=61562256328218&mibextid=ZbWKwL" target="_blank">Facebook</a>
+                <a href="https://surveyheart.com/form/669f3c911e7c1219ca410cb9" target="_blank">Feedback</a>
+                <a href="https://www.instagram.com/bilal_desing_27?igsh=MWJwYW11bHJ6cG03cw==" target="_blank">Instagram</a>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
